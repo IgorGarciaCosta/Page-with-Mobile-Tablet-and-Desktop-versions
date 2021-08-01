@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+}
+
+nav{
+    visibility: hidden;
+    height: 0;
+    position: absolute;
+}
+
+.navbar{
+    background-color: #2E323F;
+    
+}
+
+.nav__link{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+.nav__item:hover{
+    opacity: 0.7;
+}
+
+.container{
+    padding: 2rem;
+}
+
+.sec1{
+    background-color: #3B4050;
+}
+
+.blue_box{
+    margin-top: 1.5rem;
+    text-align: center;
+    padding: 2rem;
+    background-color: #2E323F;
+    color: white;
+}
+
+footer{
+    background-color: #3B4050;
+    padding: 2rem;
+}
