@@ -169,6 +169,7 @@ footer ul {
 
 .options {
     width: 90%;
+    font-family: 'Montserrat', sans-serif;
 }
 
 @media (min-width:690px) {
@@ -209,5 +210,45 @@ footer ul {
 
     footer h1{
         text-align: center;
+    }
+}
+
+@media (min-width:780px) {
+    .sec2{
+        display: flex;
+        justify-content: space-between;
+    }
+    .sec2:not([name="1stElem"]){
+    }
+    .sec2_element{
+        text-align: center;
+        width: 30%;
+    }
+
+    .sec3{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .sec3_pt1{
+        width: 55%;
+    }
+
+    .bb_container{
+        width: 35%;
+        display: block;
+    }
+    .blue_box{
+        margin-top: 1rem;
+        font-size: 0.7rem;
+    }
+    .blue_box:not([name ="1stBox"]){
+        margin-left: 0;
+    }
+    .footer__lists{
+        display: flex;
+    }
+    .footer__lists p, li{
+        font-size: 0.7rem;
     }
 }
