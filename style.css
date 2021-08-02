@@ -1,37 +1,143 @@
-body{
+body {
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
-nav{
+.logo {
+    visibility: hidden;
+}
+
+nav {
     visibility: hidden;
     height: 0;
     position: absolute;
+    text-align: center;
+    width: 90%;
 }
 
-.navbar{
+.nav__item{
+    margin-bottom: 1rem;
+}
+
+nav ul{
+    list-style-type: none;
+    margin-bottom: 1rem;
+}
+
+.nav__link--button{
+    padding: .5rem 1rem;
+    border-radius: 50px;
+    background-color: #A59678;
+}
+
+.navbar {
     background-color: #2E323F;
-    
+    padding: 1rem;
 }
 
-.nav__link{
+.nav-toggle {
+    cursor: pointer;
+    border: 0;
+    width: 3em;
+    height: 3em;
+    padding: 0em;
+    border-radius: 50%;
+    background: #072A2D;
+    color: white;
+    transition: opacity 250ms ease;
+    position: relative;
+    left: 0;
+}
+
+.nav-toggle:focus, .nav-toggle:hover {
+    opacity: .75;
+}
+
+.hamburguer {
+    width: 50%;
+    position: relative;
+}
+
+.hamburger, .hamburger::before, .hamburger::after {
+    display: block;
+    margin: 0 auto;
+    height: 3px;
+    background: white;
+}
+
+.hamburger::before, .hamburger::after {
+    content: '';
+    width: 100%;
+}
+
+.hamburger::before {
+    transform: translateY(-6px);
+}
+
+.hamburger::after {
+    transform: translateY(3px);
+}
+
+.nav--visible {
+    visibility: visible;
+    height: auto;
+    position: relative;
+}
+
+.nav__link {
     text-decoration: none;
     text-transform: uppercase;
     color: white;
 }
 
-.nav__item:hover{
+.nav__item:hover {
     opacity: 0.7;
 }
 
-.container{
+.container {
     padding: 2rem;
 }
 
-.sec1{
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+h2{
+    color: #A59678;
+}
+
+.sec1 {
     background-color: #3B4050;
 }
 
-.blue_box{
+.part1 {
+    color: white;
+}
+
+.part2 {
+    color: #A59678;
+}
+
+.sec1 p {
+    color: white;
+    
+}
+
+.section1_button {
+    text-transform: uppercase;
+    padding: 1rem;
+    background-color: #A59678;
+    color: white;
+    border: none;
+    border-radius: 50px;
+}
+
+.hero__img {
+    width: 100%;
+}
+
+.blue_box {
     margin-top: 1.5rem;
     text-align: center;
     padding: 2rem;
@@ -39,7 +145,30 @@ nav{
     color: white;
 }
 
-footer{
+footer {
     background-color: #3B4050;
     padding: 2rem;
+    color: white;
+}
+
+footer h3 {
+    color: #A59678;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+.footer__item {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer__lists {
+    text-align: center;
+}
+
+.options{
+    width: 90%;
 }

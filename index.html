@@ -7,8 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RespPage</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <div class="navbar row">
+    <button class="nav-toggle">
+        <i class="fa fa-bars"></i>
+        <span class="hamburguer"></span>
+    </button>
     <a class="logo" href="#">
         <img src="img/logo.svg" alt="conquering responsive layouts">
     </a>
@@ -80,7 +89,7 @@
                 eiusmod tempor incididunt ut
                 labore et dolore magna aliqua. Ut
                 enim ad minim veniam.</p>
-            <img src="./img/hero-img.jpg" alt="">
+            <img class="hero__img" src="./img/hero-img.jpg" alt="">
             <p>Lorem ipsum dolor sit amet,
                 consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut
@@ -114,7 +123,7 @@
 
     <footer>
         <h1>just scratching the surface</h1>
-        <div class="row">
+        <div class="footer__lists">
             <div class="elem1">
                 <h3>About our company</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -123,32 +132,39 @@
             </div>
             <div class="elem2">
                 <h3>Getting around</h3>
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                </ul>
+                <div class="options">
+                    <ul>
+                        <li><a class="footer__item" href="">Home</a> </li>
+                        <li><a class="footer__item" href="">About</a></li>
+                        <li><a class="footer__item" href="">Contact</a></li>
+                    </ul>
+                </div>
+
             </div>
             <div class="elem2">
-                <h3></h3>
-                <ul>
-                    <li>Lorem ipsum</li>
-                    <li>dolor</li>
-                    <li>sit amet</li>
-                    <li>consectetur</li>
-                </ul>
+                <h3>Other things</h3>
+                <div class="options">
+                    <ul>
+                        <li><a class="footer__item" href="">Home</a> </li>
+                        <li><a class="footer__item" href="">About</a></li>
+                        <li><a class="footer__item" href="">Contact</a></li>
+                    </ul>
+                </div>
             </div>
             <div class="elem2">
-                <h3></h3>
-                <ul>
-                    <li>Lorem ipsum</li>
-                    <li>dolor</li>
-                    <li>sit amet</li>
-                    <li>consectetur</li>
-                </ul>
+                <h3>And more</h3>
+                <div class="options">
+                    <ul>
+                        <li><a class="footer__item" href="">Home</a> </li>
+                        <li><a class="footer__item" href="">About</a></li>
+                        <li><a class="footer__item" href="">Contact</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </footer>
+
+    <script src="./dropDown.js"></script>
 
 </body>
 
